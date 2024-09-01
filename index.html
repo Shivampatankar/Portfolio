@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bd4a86639.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+    <nav>
+        <img src="images/2.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#hrader">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+    <p>Fresher Open-to-Work</p>
+    <h1>Hi, I'm <span>Shivam</span><br> Patankar From India</h1>
+ </div>
+ </div>   
+</div>
+<!---------------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Empathetic and responsible recent graduate with strong team leadership abilities and a keen adaptability. to new environments. Known for embracing challenges and pursuing innovative solutions to achieve exceptional outcomes. Possesses a unique approach to decision-making aimed at driving positive and transformative future results. Eager to apply these strengths in a dynamic role, contributing to the success. and growth of forward-thinking organizations.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>HTML</span><br><br>CSS</li>
+                    <li><span>JAVASCRPT</span><br><br>JAVA</li>
+                    <li><span>REACT.JS</span><br><br>OOP's<br></li>
+                    <li><span>SQL</span></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="certification">
+                <ul>
+                    <li><span>C Programming Course by</span><br>Great Learning<br>Date:23rd March 2023</li>
+                    <li><span>Java DataStructure Course by</span><br>Core2Web<br>Date:1st November 2023</li>
+                    <li><span>Data Visualisation: Empowering Bussiness with Effective Insights by</span><br>Tata Forage<br>Date:28th July 2024</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2018</span><br>Senior Secondary Certification:-<br>Annasaheb Rajmane Vidyalaya Rui<br>Percentage-92%</li>
+                    <li><span>2020</span><br>Higher Secondary Certification:-<br>Kabnoor HighSchool & Junior College Kabnoor<br>Percentage-66.77%</li>
+                    <li><span>2024</span><br>Bachelor's of Engineering(Electronics & Telecommunication):-<br>Savitribai Phule University Pune<br>CGPA-7.80</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------projects---------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Shopping Website</h2>
+                <p>Developed a shopping website using HTML & CSS. The website aims to provide seamless shopping experience, showcasing a variety of products across different categories.
+                    <br>HTML: Structuring the content and layout of the website.
+                    <br>CSS: Styling the website to enhance its visual appeal and user experience.
+                    <br>Key-Points: navbar, footer, main page, product page.images.styles,etc.
+                   </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-rocketchat"></i>
+                <h2>ChatApp</h2>
+                <p>This is my group project by using java.<br> Implemented a two-way network chat using JavaFX, featuring a window for initiating and receiving connection requests on user-specified ports.
+                    <br>Included an input box for users to send messages and a button to close the connection or the window. Enabled connection requests to other ChatApp windows on specified computers and ports.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-notes-medical"></i>
+                <h2>IoT Based Health Monitoring System</h2>
+                <p>Designed a remote patient monitoring system using the ESP8266 module and ThingSpeak loT platform for real time data transmission.
+                    <br>Enabled healthcare providers to remotely monitor and analyze patient vital signs vis an intuitive Interface.
+                    <br>Implemented intelligent algorithms to detect abnormalities and trigger alerts, enhancing patient safety and outcomes.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+    </div>
+<!-----------------copyright-------------------->
+<div class="copyright">
+    <p>Copyright @ Shivam. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+</div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby66R1E58O6hMev94hbJYp-SuH8gl6H6U4Ib9Ze0ibwkgTYetR42dVrtVz1zhEOjMLR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
